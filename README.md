@@ -1,2 +1,2 @@
 # SAD-Image-Calculation
-Eletronics System Project 
+Eletronics Systems Project 
