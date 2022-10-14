@@ -2,12 +2,16 @@ library IEEE;
 use IEEE.numeric_std.all;
 use IEEE.std_logic_1164.all;
 
+library WORK;
+use WORK.my_package.all;
+
+-- Subtractor
 entity subtractor is
-    generic (outBits : positive);
+    generic (nBits : positive:=8);
     port (
-        a : in  std_logic_vector(outBits-1 downto 0);
-        b : in  std_logic_vector(outBits-1 downto 0);
-        res : out std_logic_vector(outBits-1 downto 0) 
+        a : in  std_logic_vector(nBits-1 downto 0);
+        b : in  std_logic_vector(nBits-1 downto 0);
+        res : out std_logic_vector(nBits-1 downto 0) 
     );
 end entity;
 
