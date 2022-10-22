@@ -18,18 +18,18 @@ end register;
 
 architecture rtl of register is
     -- register uses a D-Flip Flop
-    component dfc
+    component dff_n
         port(
             clk:    in std_logic;
             rst : in std_logic;
             d   : in std_logic;
             q   : out std_logic
         );
-    end component dfc;
+    end component dff_n;
 
     begin
         register: for i in 0 to N-1 generate
-            dfc_i: dfc
+            dff_n_i: dff_n
             port map (
                 clk => clk, 
                 rst => rst, 
