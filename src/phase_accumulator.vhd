@@ -1,67 +1,72 @@
 library IEEE;
-use IEEE.numeric_std.all;
 use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
-library WORK;
-use WORK.my_package.all;
-
-entity phase_accumulator is
-    generic (outBits : positive:=16);
-    port  (
-        clk : in std_logic;
-        rst : in std_logic;
-        in_phac   : in std_logic_vector(N-1 downto 0);
-        out_phac   : out std_logic_vector(N-1 downto 0)
+entity counter is
+    generic (N: positive := 8);
+    port(
+        input:  in std_logic_vector(N-1 downto 0);
+        output: out std_logic_vector(N-1 downto 0);
+        -- dff inputs
+        en      :   in std_logic;
+        clk     :   in std_logic;
+        resetn  :   in  std_logic;
+        -- RCA inputs
+        cin:    in std_logic
     );
 end entity;
 
-architecture rtl of phase_accumulator is
-    component register is
-        generic(N:positive);
-        port(
-            clk : in std_logic;
-            rst : in std_logic;
-            d  : in std_logic_vector(N-1 downto 0);
-            q   : out std_logic_vector(N-1 downto 0)
+architecture beh of counter is
+    component ripple_carry_adder 
+    generic (N: positive :=8);
+    port (
+        A:      in std_logic_vector(N-1 downto 0);
+        B:      in std_logic_vector(N-1 downto 0);
+        cin:    in std_logic;
+        cout:   out std_logic;
+        F:      out std_logic_vector(N-1 downto 0)
+    );
+    end component; 
+
+    component dff_n
+        generic (N: positive :=8);
+        port (
+            di      :   in std_logic_vector(N-1 downto 0);
+            en      :   in std_logic;
+            clk     :   in std_logic;
+            resetn  :   in  std_logic;
+            do      :   out std_logic_vector(N-1 downto 0)
         );
     end component;
 
-    component ripple_carry_adder is
-        generic(N:positive)
-        port(
-            a   : in  std_logic_vector(N -1 downto 0);
-			b   : in  std_logic_vector(N -1 downto 0);
-			cin  : in  std_logic;
-			s   : out std_logic_vector(N -1 downto 0);
-			cout  : out std_logic
+    signal sum_dff : std_logic_vector(N-1 downto 0);
+    signal dff_out: std_logic_vector(N-1 downto 0);
+    signal carry: std_logic;
 
-        );
-    end component;
-
-    --signals
-    signal feedback:    std_logic_vector(N-1 downto 0)  -- feedback loop between registerister and ripple_carry_adder input
-    signal out_rca:     std_logic_vector(N-1 downto 0)  -- output signal of ripple_carry_adder
-    
     begin
-        rca: ripple_carry_adder 
-            generic map(N)
-            port map(
-               a => in_phac;
-               b => feedback;
-               cin => '0';
-               s => out_rca;
-               cout => open
-            );
+
+        RCA: ripple_carry_adder 
+        generic map(N => N)
+        port map(
+            A => input,
+            B => dff_out,
+            cin => cin,
+            cout => open,
+            F => sum_dff
+        );
+
+        DFF: dff_n 
+        generic map(N => N)
+        port map(
+            di => sum_dff,
+            do => dff_out,
+            clk => clk,
+            en => en,
+            resetn => resetn
+        );
+
         
-        register: register
-            generic map(N)
-            port map(
-                clk => clk;
-                rst => rst;
-                d => out_rca;
-                q => feedback
-            );
+        output <= dff_out;
 
-        out_phac <= feedback;
 
-    end rtl;
+end beh;

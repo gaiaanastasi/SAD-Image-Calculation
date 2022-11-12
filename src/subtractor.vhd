@@ -2,9 +2,6 @@ library IEEE;
 use IEEE.numeric_std.all;
 use IEEE.std_logic_1164.all;
 
-library WORK;
-use WORK.my_package.all;
-
 -- Subtractor
 entity subtractor is
     generic (nBits : positive:=8);
