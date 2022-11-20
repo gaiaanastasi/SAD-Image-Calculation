@@ -13,14 +13,32 @@ entity subtractor is
 end entity;
 
 architecture rtl of subtractor is
+    component ripple_carry_adder 
+    generic (N: positive :=8);
+    port (
+        A:      in std_logic_vector(N-1 downto 0);
+        B:      in std_logic_vector(N-1 downto 0);
+        cin:    in std_logic;
+        cout:   out std_logic;
+        F:      out std_logic_vector(N-1 downto 0)
+    );
+    end component;
+
+    signal not_b: std_logic_vector (nBits-1 downto 0);
+    signal out_rca: std_logic_vector(nBits-1 downto 0);
+
     begin
-        sub_proc: process(a,b)
-        begin
-            -- calculation overflow check
-            if unsigned(a) >= unsigned(b) then
-                res <= std_logic_vector(unsigned(a)-unsigned(b));
-            else
-                res <= std_logic_vector(unsigned(a)-unsigned(b));
-            end if;
-        end process;
+        not_b <= not b;
+        SUB: ripple_carry_adder 
+        generic map(N => nBits)
+        port map(
+            A => a,
+            B => not_b,
+            cin => '1',
+            cout => open,
+            F => out_rca
+        ); 
+        
+        res <= out_rca;
+        
     end rtl;
