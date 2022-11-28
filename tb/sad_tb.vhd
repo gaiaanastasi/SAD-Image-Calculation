@@ -10,6 +10,7 @@ architecture beh of sad_tb is
     constant nBits : positive := 8;
     constant outBits : positive := 16;
     constant CLK_PERIOD : time := 100 ns;
+    constant FINISH  			: std_logic_vector(nPixel-1 downto 0) :=  (others => '1');
 
     component sad 
     generic (
@@ -24,7 +25,8 @@ architecture beh of sad_tb is
 		rst		    : in std_logic;				
 		enable		: in std_logic;				
 		sad		    : out std_logic_vector(outBits-1 downto 0);	
-		valid	    : out std_logic				
+		valid	    : out std_logic	;
+        new_comp    : in std_logic;		
 	);
     end component;
 
@@ -36,6 +38,7 @@ architecture beh of sad_tb is
     signal valid_ext : std_logic;
     signal sad_ext : std_logic_vector (outBits-1 downto 0);
     signal testing : boolean := true;
+    signal new_comp: std_logic:= '1';
 
     begin
         clk <=  not clk after clk_period/2 when testing else '0';
@@ -58,6 +61,14 @@ architecture beh of sad_tb is
 
         stimulus : process
     begin
+        pixel_A_ext <= (others => '0');
+		pixel_B_ext <= (others => '0');
+		
+        wait until rising_edge(clk);
+        new_comp <= '0';
+
+        wait until FINNISH*rising_edge(clk);
+        new_comp <= '1';
         
         wait for 500 ns;
         testing <= false;

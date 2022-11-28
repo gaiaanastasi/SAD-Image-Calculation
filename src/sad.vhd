@@ -5,9 +5,10 @@ use IEEE.std_logic_1164.all;
 
 entity sad is
     generic (
-        nPixel  :   positive:=16;   --total pixels of image
+        nPixel  :   positive:=16;   --total pixels of an image
         nBits   :   positive:=8;    --bits in each pixel
-        outBits :   positive:=16    --bits for the output
+        -- The output of the sum is represented on nBits+1. I have to perform the sum for nPixel times
+        outBits :   positive:= 144    --bits for the output
     );
     port(
         pixel_A		: in std_logic_vector(nBits-1 downto 0);	
@@ -16,7 +17,8 @@ entity sad is
 		rst		    : in std_logic;				
 		enable		: in std_logic;				
 		sad		    : out std_logic_vector(outBits-1 downto 0);	
-		valid	    : out std_logic				
+		valid	    : out std_logic;	
+        new_comp    : in std_logic		--signal to determine if a new computation is started	
 	);
 
 end sad;
@@ -67,6 +69,7 @@ architecture rtl of sad is
     signal out_mux:     std_logic_vector(outBits-1 downto 0);      -- out of the multiplexer
     signal last_out:    std_logic_vector(outBits-1 downto 0);        --last output
     signal counter_value:  std_logic_vector(nPixel-1 downto 0);      -- counter value
+    signal old_valid:   std_logic;                                  --old valid value
 
     begin
         --sad_proc: process (clk, rst)
@@ -77,6 +80,8 @@ architecture rtl of sad is
             --signal res_add: std_logic_vector(outBits-1 downto 0);
         --begin
             -- Save pixel_A and pixel_B into registeristers
+            valid <= '0' when (new_comp='1') else not valid <= '1'
+            counter_value <= '0' when (new_comp='1') else not counter_value <= counter_value;
             PA_register: dff_n
                 generic map (nBits)
                 port map (
@@ -145,6 +150,8 @@ architecture rtl of sad is
 
             sad <= last_out;
             valid <= '1' when (counter_value = FINISH ) else not '0';
+            old_valid <= valid;
+            
      --end sad_proc;
 
     end rtl;
