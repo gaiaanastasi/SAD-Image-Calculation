@@ -66,8 +66,8 @@ architecture rtl of sad is
     signal padding:     std_logic_vector(outBits - nBits-1 downto 0); --signal for padding
     signal in_phac:      std_logic_vector(outBits-1 downto 0);      -- input signal of phase_accumulator
     signal out_phac:     std_logic_vector(outBits-1 downto 0);      -- output signal of phase_accumulator
-    signal out_mux:     std_logic_vector(outBits-1 downto 0);      -- out of the multiplexer
-    signal last_out:    std_logic_vector(outBits-1 downto 0);        --last output
+    --signal out_mux:     std_logic_vector(outBits-1 downto 0);      -- out of the multiplexer
+    --signal last_out:    std_logic_vector(outBits-1 downto 0);        --last output
     signal counter_value:  std_logic_vector(nPixel-1 downto 0);      -- counter value
     signal old_valid:   std_logic;                                  --old valid value
 
@@ -79,11 +79,13 @@ architecture rtl of sad is
             --signal value:   std_logic_vector(outBits-1 downto 0);   -- supported vector
             --signal res_add: std_logic_vector(outBits-1 downto 0);
         --begin
+            --If a new computation is started I reset valid and counter
+            old_valid <= '0' when (new_comp='1') else not '1';
+            valid <= old_valid;
+            counter_value <= (others => '0') when (new_comp='1') else not counter_value;
             -- Save pixel_A and pixel_B into registeristers
-            valid <= '0' when (new_comp='1') else not valid <= '1'
-            counter_value <= '0' when (new_comp='1') else not counter_value <= counter_value;
             PA_register: dff_n
-                generic map (nBits)
+                generic map (N => nBits)
                 port map (
                     clk => clk, 
                     rst => rst, 
@@ -91,7 +93,7 @@ architecture rtl of sad is
                     d => pixel_A,
                     q => PA_to_sub);
             PB_register: dff_n
-                generic map (nBits)
+                generic map (N => nBits)
                 port map (
                     clk => clk, 
                     rst => rst, 
@@ -101,22 +103,23 @@ architecture rtl of sad is
                 ); 
             --Subtractor  
             sub: subtractor
-                generic map (nBits)
+                generic map (outBits => nBits)
                 port map (
                     a => PA_to_sub, 
                     b => PB_to_sub, 
                     res => out_sub
                 );
             
-            -- generate padding
+            -- generate padding to avoid computational overflow
             gen_padding: for i in 0 to outBits - nBits -1 generate
                 padding(i) <='0';
             end generate gen_padding;
 
             in_phac <= padding & out_sub;
 
+            -- Perform the sum of absolute difference values
             add: phase_accumulator
-                generic map(outBits)
+                generic map(outBits=> outBits)
                 port map(
                     clk => clk, 
                     rst => rst, 
@@ -126,19 +129,23 @@ architecture rtl of sad is
                     out_add => out_phac
                 );
 
-                out_mux <= out_phac when (enable = '1') else not(last_out);
-
-            last_reg : dff_n 
-            generic map (outBits)
-            port map (
-                clk => clk, 
-                rst => rst, 
-                en => enable,
-                d => out_mux,
-                q => last_out);
+            --out_mux <= out_phac when (enable = '1') else not(last_out);
             
+
+            -- Secondo me non serve??? ***PAY ATTENTION HEREEE!****
+            --last_reg : dff_n 
+            --generic map (N=>outBits)
+            --port map (
+              --  clk => clk, 
+               -- rst => rst, 
+                --en => enable,
+                --d => out_mux,
+                --q => last_out);
+            -- ************************************************************
+            
+            -- Counter to know when we have to set valid signal
             counter:  phase_accumulator
-            generic map(nPixel)
+            generic map(outBits=> nPixel)
             port map(
                 clk => clk, 
                 rst => rst, 
@@ -148,9 +155,10 @@ architecture rtl of sad is
                 out_add => counter_value
             );
 
-            sad <= last_out;
-            valid <= '1' when (counter_value = FINISH ) else not '0';
-            old_valid <= valid;
+            -- Set sad and valid
+            sad <= out_phac;
+            old_valid <= '1' when (counter_value = FINISH ) else not '0';
+            valid <= old_valid;
             
      --end sad_proc;
 

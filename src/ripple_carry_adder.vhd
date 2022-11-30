@@ -49,7 +49,7 @@ begin
                     s    => f(i),
                     cout => carry(i)		
                 );			
-        end generate SECONDS;	
+        end generate SECONDS;  
     end generate GEN; 
 
     cout <= carry(N-1);

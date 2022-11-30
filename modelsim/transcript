@@ -1,193 +1,84 @@
-# Compile of subtractor_tb.vhd was successful.
-vsim -gui work.subtractor_tb
-# vsim -gui work.subtractor_tb 
-# Start time: 18:40:27 on Nov 20,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.subtractor_tb(beh)
-# Loading work.subtractor(beh)
-# ** Warning: (vsim-3035) Instantiation depth of '/subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
-# ** Error: (vsim-3036) Instantiation depth of '/subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB' is 75. Assuming recursive instantiation.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /subtractor_tb/SUB/res(7 downto 0) has no driver.
-# This port will contribute value (UUUUUUUU) to the signal network.
-add wave -position insertpoint  \
-sim:/subtractor_tb/clk \
-sim:/subtractor_tb/a_ext \
-sim:/subtractor_tb/b_ext \
-sim:/subtractor_tb/res_ext \
-sim:/subtractor_tb/testing
-run -all
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of phase_accumulator.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of sad.vhd failed with 4 errors.
 # Compile of subtractor.vhd was successful.
-quit -sim
-# End time: 18:48:00 on Nov 20,2022, Elapsed time: 0:07:33
-# Errors: 1, Warnings: 80
-vsim -gui work.subtractor_tb
-# vsim -gui work.subtractor_tb 
-# Start time: 18:48:06 on Nov 20,2022
+# Compile of ripple_carry_adder_tb.vhd was successful.
+# 7 compiles, 1 failed with 4 errors.
+# Compile of sad.vhd failed with 1 errors.
+# Compile of sad.vhd was successful.
+vsim -gui work.ripple_carry_adder_tb
+# vsim -gui work.ripple_carry_adder_tb 
+# Start time: 17:37:22 on Nov 30,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.subtractor_tb(beh)
-# Loading work.subtractor(rtl)
+# Loading work.ripple_carry_adder_tb(beh)
+# Loading work.ripple_carry_adder(beh)
+# ** Fatal: (vsim-3348) Port length (8) does not match actual length (9) for port "/ripple_carry_adder_tb/dut/F".
+#    Time: 0 ps  Iteration: 0  Instance: /ripple_carry_adder_tb/dut File: C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:37:22 on Nov 30,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 6
+# Compile of ripple_carry_adder.vhd was successful.
+# Break key hit
+vsim -gui work.ripple_carry_adder_tb
+# vsim -gui work.ripple_carry_adder_tb 
+# Start time: 17:39:15 on Nov 30,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ripple_carry_adder_tb(beh)
+# Loading work.ripple_carry_adder(beh)
+# Loading work.full_adder(beh)
+# ** Warning: (vsim-8683) Uninitialized out port /ripple_carry_adder_tb/dut/F(8) has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint  \
+sim:/ripple_carry_adder_tb/clk \
+sim:/ripple_carry_adder_tb/a_ext \
+sim:/ripple_carry_adder_tb/b_ext \
+sim:/ripple_carry_adder_tb/c_in_ext \
+sim:/ripple_carry_adder_tb/f_ext \
+sim:/ripple_carry_adder_tb/c_out_ext \
+sim:/ripple_carry_adder_tb/testing
+run -all
+# Compile of ripple_carry_adder.vhd was successful.
+# Break key hit
+quit -sim
+# End time: 17:45:33 on Nov 30,2022, Elapsed time: 0:06:18
+# Errors: 0, Warnings: 4
+vsim -gui work.ripple_carry_adder_tb
+# vsim -gui work.ripple_carry_adder_tb 
+# Start time: 17:45:41 on Nov 30,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ripple_carry_adder_tb(beh)
 # Loading work.ripple_carry_adder(beh)
 # Loading work.full_adder(beh)
 add wave -position insertpoint  \
-sim:/subtractor_tb/clk \
-sim:/subtractor_tb/a_ext \
-sim:/subtractor_tb/b_ext \
-sim:/subtractor_tb/res_ext \
-sim:/subtractor_tb/testing \
-sim:/subtractor_tb/N \
-sim:/subtractor_tb/CLK_PERIOD
+sim:/ripple_carry_adder_tb/clk \
+sim:/ripple_carry_adder_tb/a_ext \
+sim:/ripple_carry_adder_tb/b_ext \
+sim:/ripple_carry_adder_tb/c_in_ext \
+sim:/ripple_carry_adder_tb/f_ext \
+sim:/ripple_carry_adder_tb/c_out_ext \
+sim:/ripple_carry_adder_tb/testing \
+sim:/ripple_carry_adder_tb/CLK_PERIOD \
+sim:/ripple_carry_adder_tb/N
 run -all
-# End time: 22:43:31 on Nov 20,2022, Elapsed time: 3:55:25
-# Errors: 0, Warnings: 1
+# Compile of dff_n.vhd was successful.
+# Compile of full_adder.vhd was successful.
+# Compile of phase_accumulator.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of sad.vhd failed with 6 errors.
+# Compile of subtractor.vhd failed with 7 errors.
+# 6 compiles, 2 failed with 13 errors.
+# Compile of subtractor.vhd was successful.
+# Compile of sad.vhd failed with 2 errors.
+# Compile of sad.vhd was successful.

@@ -24,16 +24,19 @@ architecture rtl of subtractor is
     );
     end component;
 
-    signal not_b: std_logic_vector (nBits-1 downto 0);
+    signal min: std_logic_vector(nBits-1 downto 0);
+    signal sottr: std_logic_vector (nBits-1 downto 0);
     signal out_rca: std_logic_vector(nBits-1 downto 0);
 
     begin
-        not_b <= not b;
+        -- Check if a is greater than b
+        min <= a when (a > b) else b;
+        sottr <= not b when (a > b) else not a;
         SUB: ripple_carry_adder 
         generic map(N => nBits)
         port map(
-            A => a,
-            B => not_b,
+            A => min,
+            B => sottr,
             cin => '1',
             cout => open,
             F => out_rca
