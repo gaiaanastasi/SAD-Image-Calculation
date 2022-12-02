@@ -27,11 +27,12 @@ architecture rtl of subtractor is
     signal min: std_logic_vector(nBits-1 downto 0);
     signal sottr: std_logic_vector (nBits-1 downto 0);
     signal out_rca: std_logic_vector(nBits-1 downto 0);
+    signal zero : std_logic_vector (nBits-1 downto 0);
 
     begin
         -- Check if a is greater than b
-        min <= a when (a > b) else b;
-        sottr <= not b when (a > b) else not a;
+        min <= a when (to_integer(unsigned(a)) > to_integer(unsigned(b))) else b;
+        sottr <= not b when (to_integer(unsigned(a)) > to_integer(unsigned(b))) else not a;
         SUB: ripple_carry_adder 
         generic map(N => nBits)
         port map(
@@ -42,6 +43,6 @@ architecture rtl of subtractor is
             F => out_rca
         ); 
         
-        res <= out_rca;
+        res <= out_rca; --when (out_rca >) else not out_rca;
         
     end rtl;

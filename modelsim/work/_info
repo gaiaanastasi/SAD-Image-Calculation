@@ -57,7 +57,7 @@ Z15 w1666367153
 R1
 R2
 R3
-!i122 82
+!i122 183
 R4
 Z16 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/dff_n.vhd
 Z17 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/dff_n.vhd
@@ -67,9 +67,9 @@ VLj_MDbmYI59ce^BUi5[:63
 !s100 gcNgnGTL]N]P9_0e30N<X1
 R7
 32
-Z18 !s110 1669829928
+Z18 !s110 1670003827
 !i10b 1
-Z19 !s108 1669829928.000000
+Z19 !s108 1670003827.000000
 Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/dff_n.vhd|
 Z21 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/dff_n.vhd|
 !i113 1
@@ -80,7 +80,7 @@ R1
 R2
 R3
 DEx4 work 5 dff_n 0 22 Lj_MDbmYI59ce^BUi5[:63
-!i122 82
+!i122 183
 l19
 L16 16
 V9EP<R;=kDbmcW4C79GTX]1
@@ -142,7 +142,7 @@ Efull_adder
 Z29 w1666351020
 R2
 R3
-!i122 83
+!i122 184
 R4
 Z30 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/full_adder.vhd
 Z31 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/full_adder.vhd
@@ -164,7 +164,7 @@ Abeh
 R2
 R3
 DEx4 work 10 full_adder 0 22 6E`C_L8PY9BEToE4AEinX2
-!i122 83
+!i122 184
 l15
 L14 27
 VTJBn^KnIVzHa6IgGSFH2O3
@@ -184,21 +184,21 @@ Z34 w1668280745
 R1
 R2
 R3
-!i122 84
+!i122 185
 R4
-R5
-R6
+Z35 8C:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\src\phase_accumulator.vhd
+Z36 FC:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\src\phase_accumulator.vhd
 l0
 L5 1
 VKfXKYhQENMYQndM89KRHC1
 !s100 Y:0460]HOGi2me5fmKA;?3
 R7
 32
-Z35 !s110 1669829929
+R18
 !i10b 1
 R19
-R10
-R11
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\src\phase_accumulator.vhd|
+Z38 !s107 C:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\src\phase_accumulator.vhd|
 !i113 1
 R12
 R13
@@ -207,41 +207,41 @@ R1
 R2
 R3
 DEx4 work 17 phase_accumulator 0 22 KfXKYhQENMYQndM89KRHC1
-!i122 84
+!i122 185
 l46
 R14
 V6mZeoYRa_Q__9Lad>VGO<3
 !s100 fAcE>UD^o32Gh0H`=_]Fc1
 R7
 32
-R35
+R18
 !i10b 1
 R19
-R10
-R11
+R37
+R38
 !i113 1
 R12
 R13
 Eripple_carry_adder
-Z36 w1669829800
+Z39 w1669829800
 R1
 R2
 R3
-!i122 85
+!i122 186
 R4
-Z37 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd
-Z38 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd
+Z40 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd
+Z41 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd
 l0
 L5 1
 VI@8o4>c4^9nT@mHaAOa1]2
 !s100 ai<dZ7BXh?UK4RVVn97AJ0
 R7
 32
-R35
+R18
 !i10b 1
-Z39 !s108 1669829929.000000
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd|
-Z41 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd|
+R19
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd|
+Z43 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/ripple_carry_adder.vhd|
 !i113 1
 R12
 R13
@@ -250,41 +250,41 @@ R1
 R2
 R3
 DEx4 work 18 ripple_carry_adder 0 22 I@8o4>c4^9nT@mHaAOa1]2
-!i122 85
+!i122 186
 l30
 L16 42
 V=JaB_2z[k9SaKBf14<i7[3
 !s100 K_QO9DJo=P>^meDSz2KHf0
 R7
 32
-R35
+R18
 !i10b 1
-R39
-R40
-R41
+R19
+R42
+R43
 !i113 1
 R12
 R13
 Eripple_carry_adder_tb
-Z42 w1669825846
+Z44 w1669825846
 R1
 R2
 R3
 !i122 77
 R4
-Z43 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd
-Z44 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd
+Z45 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd
+Z46 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd
 l0
 L5 1
 VQjhQPI`i7mBlW76FLi7YF3
 !s100 K:jOHP22TL=mdkN`l_4zM3
 R7
 32
-Z45 !s110 1669825969
+Z47 !s110 1669825969
 !i10b 1
-Z46 !s108 1669825969.000000
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd|
-Z48 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd|
+Z48 !s108 1669825969.000000
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd|
+Z50 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/ripple_carry_adder_tb.vhd|
 !i113 1
 R12
 R13
@@ -300,34 +300,34 @@ VhY8I1[RJXcR>3@<8cEWlh0
 !s100 hTgOSngiI1kCZPFZQ>;4b0
 R7
 32
-R45
-!i10b 1
-R46
 R47
+!i10b 1
 R48
+R49
+R50
 !i113 1
 R12
 R13
 Esad
-Z49 w1669830103
+Z51 w1670003792
 R3
 R2
 R1
-!i122 90
+!i122 191
 R4
-Z50 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd
-Z51 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd
+Z52 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd
+Z53 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd
 l0
 L6 1
-VGO:Y7XfMgf=XOj7aB[f1o0
-!s100 X0kfmzJWJo9dj987lLLS10
+VED:XTe1]VB:_=A`jYHE[=0
+!s100 IN]Q>d:=>Q?=_6N]Y_>4D0
 R7
 32
-Z52 !s110 1669830113
+Z54 !s110 1670004007
 !i10b 1
-Z53 !s108 1669830113.000000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd|
-Z55 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd|
+Z55 !s108 1670004007.000000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd|
+Z57 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/sad.vhd|
 !i113 1
 R12
 R13
@@ -335,42 +335,85 @@ Artl
 R3
 R2
 R1
-Z56 DEx4 work 3 sad 0 22 GO:Y7XfMgf=XOj7aB[f1o0
-!i122 90
-l74
-L26 140
-VC]]JXVbX^zNMj76zCWnkb1
-!s100 18l]4eW9Z5n@1>iEXLCQB3
+DEx4 work 3 sad 0 22 ED:XTe1]VB:_=A`jYHE[=0
+!i122 191
+l76
+L27 143
+V;d_6<]A^4m8DVU8F@zc8Y1
+!s100 1AN86JI?^ib0N>Mz;e5NJ3
 R7
 32
-R52
-!i10b 1
-R53
 R54
+!i10b 1
 R55
+R56
+R57
+!i113 1
+R12
+R13
+Esad_tb
+Z58 w1670003999
+R1
+R2
+R3
+!i122 192
+R4
+Z59 8C:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\tb\sad_tb.vhd
+Z60 FC:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\tb\sad_tb.vhd
+l0
+L5 1
+V^4Ue]DNS?eMo?N8lZARLG0
+!s100 3^WKRene_GXQbSU4a_bzi3
+R7
+32
+R54
+!i10b 1
+R55
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\tb\sad_tb.vhd|
+Z62 !s107 C:\Users\ZenBook Pro\Documents\GitHub\SAD-Image-Calculation\tb\sad_tb.vhd|
+!i113 1
+R12
+R13
+Abeh
+R1
+R2
+R3
+Z63 DEx4 work 6 sad_tb 0 22 ^4Ue]DNS?eMo?N8lZARLG0
+!i122 192
+l49
+Z64 L8 83
+VIFG2SJ0NBFoVM:[:XMl3:2
+!s100 Y=]FWP5n=7VISBfhdDo<R3
+R7
+32
+R54
+!i10b 1
+R55
+R61
+R62
 !i113 1
 R12
 R13
 Esubtractor
-Z57 w1669829995
+Z65 w1669995636
 R3
 R2
 R1
-!i122 88
+!i122 188
 R4
-Z58 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
-Z59 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
+Z66 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
+Z67 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
 l0
 L6 1
 VoGBB5REVAh[Il<za`Nejn0
 !s100 G9227gbh135OWC;cdfX8i2
 R7
 32
-Z60 !s110 1669830006
+Z68 !s110 1670003828
 !i10b 1
-Z61 !s108 1669830006.000000
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
-Z63 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
+Z69 !s108 1670003828.000000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
+Z71 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
 !i113 1
 R12
 R13
@@ -378,19 +421,19 @@ Artl
 R3
 R2
 R1
-Z64 DEx4 work 10 subtractor 0 22 oGBB5REVAh[Il<za`Nejn0
-!i122 88
-l31
-L15 33
-VAZ1i[=1F>NVJOZ;3^MHC63
-!s100 bRoSzQ3GfZOThjeHmO6cc1
+Z72 DEx4 work 10 subtractor 0 22 oGBB5REVAh[Il<za`Nejn0
+!i122 188
+l32
+L15 34
+V3jbmPWlZD>GW2fQk3MfW[1
+!s100 [O;^5oiZI1jXRAU>Xnk_X3
 R7
 32
-R60
+R68
 !i10b 1
-R61
-R62
-R63
+R69
+R70
+R71
 !i113 1
 R12
 R13
@@ -399,12 +442,12 @@ w1668965069
 R3
 R2
 R1
-R64
+R72
 !i122 67
-Z65 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
-Z66 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
+Z73 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
+Z74 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
 l27
-Z67 L8 59
+Z75 L8 59
 Vchh05hoNj[kZoRQ5M1D0V2
 !s100 Lm8fCizSQ_hXkk03FHI6Z1
 R7
@@ -412,31 +455,31 @@ R7
 !s110 1668965291
 !i10b 1
 !s108 1668965291.000000
-Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
-Z69 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
+Z77 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
 !i113 1
 R12
 R13
 Esubtractor_tb
-Z70 w1668965965
+Z78 w1668965965
 R1
 R2
 R3
-!i122 69
+!i122 190
 R4
-R65
-R66
+R73
+R74
 l0
 L5 1
 VLdb_`5?U:fm6Tl0415zA33
 !s100 M6ZXI^L9>GmWg@aXbd1o:3
 R7
 32
-Z71 !s110 1668966016
-!i10b 1
-Z72 !s108 1668966016.000000
 R68
+!i10b 1
 R69
+R76
+R77
 !i113 1
 R12
 R13
@@ -445,18 +488,18 @@ R1
 R2
 R3
 DEx4 work 13 subtractor_tb 0 22 Ldb_`5?U:fm6Tl0415zA33
-!i122 69
+!i122 190
 l27
-R67
+R75
 V8D:P91z]hm`0bFmhmOC332
 !s100 NK?NYkM7@;>bBz2o:9XG]3
 R7
 32
-R71
-!i10b 1
-R72
 R68
+!i10b 1
 R69
+R76
+R77
 !i113 1
 R12
 R13
