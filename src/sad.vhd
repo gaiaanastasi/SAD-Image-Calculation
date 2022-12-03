@@ -7,8 +7,8 @@ entity sad is
     generic (
         nPixel  :   positive:=5;--16;   --total pixels of an image
         nBits   :   positive:=8;    --bits in each pixel
-        -- The output of the sum is represented on nBits+1. I have to perform the sum for nPixel times
-        outBits :   positive:= 36 --144    --bits for the output
+        -- I have doubled the output size to prevent overflow
+        outBits :   positive:= 16     --bits for the output 
     );
     port(
         pixel_A		: in std_logic_vector(nBits-1 downto 0);	

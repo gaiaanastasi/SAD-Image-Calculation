@@ -6,21 +6,21 @@ entity sad_tb is
 end entity;
 
 architecture beh of sad_tb is
-    constant nPixel  :   positive:=5;--16;   --total pixels of image
+    constant nPixel  :   positive:=5;    --total pixels of image (by defaul 2^4=16 and 16 is represented on 5 bits)
     constant nBits   :   positive:=8;    --bits in each pixel
-    constant outBits :   positive:=36;
+    constant outBits :   positive:=16;   --bits of the output. I have doubled input ones to prevent overflow
     --constant nPixel : positive := 4; --16 ;
     --constant nBits : positive := 8;
     --constant outBits : positive := 36; --16;
     constant CLK_PERIOD : time := 100 ns;
     --constant FINISH  			: std_logic_vector(nPixel-1 downto 0) :=  (others => '1');
     constant FINISH : positive := 2**(nPixel-1)+1;
-
+    
     component sad 
     generic (
-        nPixel  :   positive:=5;--16;   --total pixels of image
+        nPixel  :   positive:=5;    --total pixels of image
         nBits   :   positive:=8;    --bits in each pixel
-        outBits :   positive:=36 --144    --bits for the output
+        outBits :   positive:=16    --bits for the output
     );
     port(
         pixel_A		: in std_logic_vector(nBits-1 downto 0);	
@@ -69,8 +69,8 @@ architecture beh of sad_tb is
 
         stimulus : process
     begin
-        pixel_A_ext <= "00000001"; --(others => '0')&'1';
-		pixel_B_ext <= (others => '0');
+        pixel_A_ext <= "11111111";--"00000001"; 
+		pixel_B_ext <= "00000000";--(others => '1');
         rst <= '1';
         new_comp_ext<= '1';
 		
@@ -82,6 +82,13 @@ architecture beh of sad_tb is
         new_comp_ext <= '1';
         wait until rising_edge(clk);
         new_comp_ext <= '0';
+        wait for FINISH*CLK_PERIOD;
+        new_comp_ext <= '1';
+        wait until rising_edge(clk);
+        en<='0';
+        new_comp_ext <= '0';
+        wait until rising_edge(clk);
+        en<='1';
         
         wait for FINISH*CLK_PERIOD;
         testing <= false;
