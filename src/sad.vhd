@@ -34,7 +34,7 @@ architecture rtl of sad is
 			res : out std_logic_vector(outBits-1 downto 0) 
 		);
 	end component;
-    component phase_accumulator is
+    component counter is
 		generic (N : positive);
 		port (
             input : in  std_logic_vector(N-1 downto 0);
@@ -65,8 +65,8 @@ architecture rtl of sad is
     signal PB_to_sub:   std_logic_vector(nBits-1 downto 0);     --connection from the registerister on pixel_A and subtractor
     signal out_sub:     std_logic_vector(nBits-1 downto 0);     --output signal of subtractor
     signal padding:     std_logic_vector(outBits - nBits-1 downto 0); --signal for padding
-    signal in_phac:      std_logic_vector(outBits-1 downto 0);      -- input signal of phase_accumulator
-    signal out_phac:     std_logic_vector(outBits-1 downto 0);      -- output signal of phase_accumulator
+    signal in_phac:      std_logic_vector(outBits-1 downto 0);      -- input signal of counter
+    signal out_phac:     std_logic_vector(outBits-1 downto 0);      -- output signal of counter
     --signal out_mux:     std_logic_vector(outBits-1 downto 0);      -- out of the multiplexer
     --signal last_out:    std_logic_vector(outBits-1 downto 0);        --last output
     signal counter_value:  std_logic_vector(nPixel-1 downto 0);      -- counter value
@@ -121,7 +121,7 @@ architecture rtl of sad is
 
             new_comp_rst <= '0' when (new_comp='1') else rst;
             -- Perform the sum of absolute difference values
-            add: phase_accumulator
+            add: counter
                 generic map(N=> outBits)
                 port map(
                     clk => clk, 
@@ -147,7 +147,7 @@ architecture rtl of sad is
             -- ************************************************************
             
             -- Counter to know when we have to set valid signal
-            counter:  phase_accumulator
+            counter1:  counter
             generic map(N=> nPixel)
             port map(
                 clk => clk, 

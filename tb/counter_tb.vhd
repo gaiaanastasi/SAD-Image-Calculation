@@ -2,14 +2,14 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity phase_accumulator_tb is
+entity counter_tb is
 end entity;
 
-architecture beh of phase_accumulator_tb is
+architecture beh of counter_tb is
     constant N: integer := 8;
     constant CLK_PERIOD : time := 100 ns;
 
-    component phase_accumulator port (
+    component counter port (
         input:  in std_logic_vector(N-1 downto 0);
         output: out std_logic_vector(N-1 downto 0);
         -- dff inputs
@@ -33,7 +33,7 @@ architecture beh of phase_accumulator_tb is
 begin
     clk <=  not clk after clk_period/2 when testing else '0';
 
-    dut: phase_accumulator 
+    dut: counter 
     generic map (N => N)
     port map(
         input => input_ext,

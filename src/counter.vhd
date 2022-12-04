@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity phase_accumulator is
+entity counter is
     generic (N: positive := 8);
     port(
         input:  in std_logic_vector(N-1 downto 0);
@@ -16,7 +16,7 @@ entity phase_accumulator is
     );
 end entity;
 
-architecture beh of phase_accumulator is
+architecture beh of counter is
     component ripple_carry_adder 
     generic (N: positive :=8);
     port (
