@@ -70,7 +70,7 @@ architecture beh of sad_tb is
         stimulus : process
     begin
         pixel_A_ext <= "11111111";--"00000001"; 
-		pixel_B_ext <= "00000000";--(others => '1');
+		pixel_B_ext <= "00000001";--(others => '1');
         rst <= '1';
         new_comp_ext<= '1';
 		

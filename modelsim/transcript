@@ -1,7 +1,7 @@
-# Compile of sad_tb.vhd was successful.
+# Compile of sad.vhd was successful.
 vsim -gui work.sad_tb
 # vsim -gui work.sad_tb 
-# Start time: 18:01:45 on Dec 03,2022
+# Start time: 13:08:20 on Dec 08,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -12,7 +12,7 @@ vsim -gui work.sad_tb
 # Loading work.subtractor(rtl)
 # Loading work.ripple_carry_adder(beh)
 # Loading work.full_adder(beh)
-# Loading work.phase_accumulator(beh)
+# Loading work.counter(beh)
 add wave -position insertpoint  \
 sim:/sad_tb/clk \
 sim:/sad_tb/rst \
@@ -51,42 +51,11 @@ run -all
 #    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# Compile of sad_tb.vhd was successful.
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-run -all
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# Compile of dff_n.vhd was successful.
-# Compile of full_adder.vhd was successful.
-# Compile of phase_accumulator.vhd was successful.
-# Compile of ripple_carry_adder.vhd was successful.
 # Compile of sad.vhd was successful.
-# Compile of subtractor.vhd was successful.
-# Compile of sad_tb.vhd failed with 1 errors.
-# Compile of subtractor_tb.vhd was successful.
-# 8 compiles, 1 failed with 1 error.
-# Compile of sad_tb.vhd was successful.
 # Break key hit
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
 # Loading work.sad(rtl)
-# Loading work.dff_n(beh)
-# Loading work.subtractor(rtl)
-# Loading work.ripple_carry_adder(beh)
-# Loading work.full_adder(beh)
-# Loading work.phase_accumulator(beh)
 run -all
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1
@@ -98,53 +67,5 @@ run -all
 #    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# Compile of sad_tb.vhd was successful.
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-run -all
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# Compile of sad_tb.vhd was successful.
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-run -all
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# Compile of sad_tb.vhd was successful.
-# Break key hit
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.sad_tb(beh)
-run -all
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /sad_tb/SAD1/sub
-# End time: 18:48:29 on Dec 03,2022, Elapsed time: 0:46:44
+# End time: 14:29:27 on Dec 09,2022, Elapsed time: 25:21:07
 # Errors: 0, Warnings: 6

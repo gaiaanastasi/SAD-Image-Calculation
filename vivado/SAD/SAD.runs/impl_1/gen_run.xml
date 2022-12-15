@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1670868167">
+  <File Type="OPT-HWDEF" Name="sad.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="sad_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="sad.dcp"/>
+  <File Type="BITSTR-BMM" Name="sad_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sad_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="sad_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="sad_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="sad.tcl"/>
+  <File Type="OPT-TIMING" Name="sad_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="sad_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="sad_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="sad_reports.tcl"/>
+  <File Type="OPT-DRC" Name="sad_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="sad_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="sad_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="sad_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="sad_placed.dcp"/>
+  <File Type="PLACE-IO" Name="sad_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sad_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="sad_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="sad_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="sad_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sad_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="sad_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="sad_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sad_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="sad.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sad_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sad_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="sad_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="sad.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="sad_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sad_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="sad_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sad_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="sad_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="sad_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="sad_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="sad.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sad_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sad_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sad_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="sad_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="sad_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="sad_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="sad_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="sad_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="sad_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="sad_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="sad_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="sad_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="sad_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="sad_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sad_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sad_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sad_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sad_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sad_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sad_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="sad.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sad_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="sad.rbt"/>
+  <File Type="BITSTR-NKY" Name="sad.nky"/>
+  <File Type="PDI-FILE" Name="sad.pdi"/>
+  <File Type="RCFI_FILE" Name="sad.rcfi"/>
+  <File Type="CFI_FILE" Name="sad.cfi"/>
+  <File Type="RNPI_FILE" Name="sad.rnpi"/>
+  <File Type="NPI_FILE" Name="sad.npi"/>
+  <File Type="RBD_FILE" Name="sad.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sad.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="sad.sysdef"/>
+  <File Type="BG-BGN" Name="sad.bgn"/>
+  <File Type="BG-DRC" Name="sad.drc"/>
+  <File Type="RDI-RDI" Name="sad.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../src/counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/dff_n.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/ripple_carry_adder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/subtractor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../src/sad.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sad"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/sad_constraints.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/sad_constraints.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

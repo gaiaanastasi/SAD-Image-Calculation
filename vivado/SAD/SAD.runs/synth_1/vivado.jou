@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Dec 12 18:58:41 2022
+# Process ID: 23124
+# Current directory: C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/vivado/SAD/SAD.runs/synth_1
+# Command line: vivado.exe -log sad.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sad.tcl
+# Log file: C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/vivado/SAD/SAD.runs/synth_1/sad.vds
+# Journal file: C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/vivado/SAD/SAD.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sad.tcl -notrace

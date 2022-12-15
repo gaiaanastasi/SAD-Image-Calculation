@@ -29,9 +29,9 @@ architecture rtl of sad is
     component subtractor is
 		generic (nBits : positive);
 		port (
-			a : in  std_logic_vector(outBits-1 downto 0);
-			b : in  std_logic_vector(outBits-1 downto 0);
-			res : out std_logic_vector(outBits-1 downto 0) 
+			a : in  std_logic_vector(nBits-1 downto 0);
+			b : in  std_logic_vector(nBits-1 downto 0);
+			res : out std_logic_vector(nBits-1 downto 0) 
 		);
 	end component;
     component counter is
@@ -69,6 +69,7 @@ architecture rtl of sad is
     signal out_phac:     std_logic_vector(outBits-1 downto 0);      -- output signal of counter
     --signal out_mux:     std_logic_vector(outBits-1 downto 0);      -- out of the multiplexer
     --signal last_out:    std_logic_vector(outBits-1 downto 0);        --last output
+    signal sub_reg_to_padd: std_logic_vector(nBits-1 downto 0);      -- from register after the subtractor to padding
     signal counter_value:  std_logic_vector(nPixel-1 downto 0);      -- counter value
     signal old_valid:   std_logic;                                  --old valid value
     signal new_comp_rst: std_logic;
@@ -111,13 +112,24 @@ architecture rtl of sad is
                     b => PB_to_sub, 
                     res => out_sub
                 );
+
+            -- Register for wrapping
+            SUB_REG:dff_n
+                generic map (N => nBits)
+                port map (
+                    clk => clk, 
+                    resetn => rst, 
+                    en => enable,
+                    di=> out_sub,
+                    do=> sub_reg_to_padd
+                ); 
             
             -- generate padding to avoid computational overflow
             --gen_padding: for i in 0 to outBits - nBits -1 generate
               --padding(i) <='0';
             --end generate gen_padding;
             padding <= (others => '0');
-            in_phac <= padding & out_sub;
+            in_phac <= padding & sub_reg_to_padd;
 
             new_comp_rst <= '0' when (new_comp='1') else rst;
             -- Perform the sum of absolute difference values
