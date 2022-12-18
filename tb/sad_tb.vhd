@@ -77,7 +77,7 @@ architecture beh of sad_tb is
         wait until rising_edge(clk);
         new_comp_ext <= '0';
         rst <= '1';
-
+        
         wait for FINISH*CLK_PERIOD;
         wait for 200 ns;
         new_comp_ext <= '1';

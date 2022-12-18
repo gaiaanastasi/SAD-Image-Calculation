@@ -352,11 +352,11 @@ R57
 R12
 R13
 Esad_tb
-Z58 w1671198420
+Z58 w1671385462
 R1
 R2
 R3
-!i122 245
+!i122 246
 R4
 Z59 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb.vhd
 Z60 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb.vhd
@@ -366,9 +366,9 @@ V^4Ue]DNS?eMo?N8lZARLG0
 !s100 3^WKRene_GXQbSU4a_bzi3
 R7
 32
-Z61 !s110 1671198442
+Z61 !s110 1671388736
 !i10b 1
-Z62 !s108 1671198442.000000
+Z62 !s108 1671388736.000000
 Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb.vhd|
 Z64 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb.vhd|
 !i113 1
@@ -378,10 +378,10 @@ Abeh
 R1
 R2
 R3
-Z65 DEx4 work 6 sad_tb 0 22 ^4Ue]DNS?eMo?N8lZARLG0
-!i122 245
+DEx4 work 6 sad_tb 0 22 ^4Ue]DNS?eMo?N8lZARLG0
+!i122 246
 l49
-Z66 L8 93
+L8 93
 VS16L5WOz<_Z6GHcb0d7NV0
 !s100 GR:W;X6K=X3Kb4?lGd6f`3
 R7
@@ -394,15 +394,58 @@ R64
 !i113 1
 R12
 R13
+Esad_tb_2
+Z65 w1671390878
+R1
+R2
+R3
+!i122 259
+R4
+Z66 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb_2.vhd
+Z67 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb_2.vhd
+l0
+L5 1
+VZ8SI^n7AM20:gQTkl13MJ3
+!s100 fa[?1P?j5DEce0W;YV1lk2
+R7
+32
+Z68 !s110 1671390899
+!i10b 1
+Z69 !s108 1671390898.000000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb_2.vhd|
+Z71 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/sad_tb_2.vhd|
+!i113 1
+R12
+R13
+Abeh
+R1
+R2
+R3
+Z72 DEx4 work 8 sad_tb_2 0 22 Z8SI^n7AM20:gQTkl13MJ3
+!i122 259
+l41
+L7 252
+V?DJl[RF1UTTdzXA<[m_Pc0
+!s100 1XSZa40NIZNSaDGE>Ve<80
+R7
+32
+R68
+!i10b 1
+R69
+R70
+R71
+!i113 1
+R12
+R13
 Esubtractor
-Z67 w1669995636
+Z73 w1669995636
 R3
 R2
 R1
 !i122 237
 R4
-Z68 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
-Z69 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
+Z74 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
+Z75 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd
 l0
 L6 1
 VoGBB5REVAh[Il<za`Nejn0
@@ -412,8 +455,8 @@ R7
 R8
 !i10b 1
 R9
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
-Z71 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
+Z77 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/src/subtractor.vhd|
 !i113 1
 R12
 R13
@@ -421,7 +464,7 @@ Artl
 R3
 R2
 R1
-Z72 DEx4 work 10 subtractor 0 22 oGBB5REVAh[Il<za`Nejn0
+Z78 DEx4 work 10 subtractor 0 22 oGBB5REVAh[Il<za`Nejn0
 !i122 237
 l32
 L15 34
@@ -432,8 +475,8 @@ R7
 R8
 !i10b 1
 R9
-R70
-R71
+R76
+R77
 !i113 1
 R12
 R13
@@ -442,12 +485,12 @@ w1668965069
 R3
 R2
 R1
-R72
+R78
 !i122 67
-Z73 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
-Z74 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
+Z79 8C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
+Z80 FC:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd
 l27
-Z75 L8 59
+Z81 L8 59
 Vchh05hoNj[kZoRQ5M1D0V2
 !s100 Lm8fCizSQ_hXkk03FHI6Z1
 R7
@@ -455,31 +498,31 @@ R7
 !s110 1668965291
 !i10b 1
 !s108 1668965291.000000
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
-Z77 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
+Z83 !s107 C:/Users/ZenBook Pro/Documents/GitHub/SAD-Image-Calculation/tb/subtractor_tb.vhd|
 !i113 1
 R12
 R13
 Esubtractor_tb
-Z78 w1668965965
+Z84 w1668965965
 R1
 R2
 R3
 !i122 217
 R4
-R73
-R74
+R79
+R80
 l0
 L5 1
 VLdb_`5?U:fm6Tl0415zA33
 !s100 M6ZXI^L9>GmWg@aXbd1o:3
 R7
 32
-Z79 !s110 1671184019
+Z85 !s110 1671184019
 !i10b 1
-Z80 !s108 1671184019.000000
-R76
-R77
+Z86 !s108 1671184019.000000
+R82
+R83
 !i113 1
 R12
 R13
@@ -490,16 +533,16 @@ R3
 DEx4 work 13 subtractor_tb 0 22 Ldb_`5?U:fm6Tl0415zA33
 !i122 217
 l27
-R75
+R81
 V8D:P91z]hm`0bFmhmOC332
 !s100 NK?NYkM7@;>bBz2o:9XG]3
 R7
 32
-R79
+R85
 !i10b 1
-R80
-R76
-R77
+R86
+R82
+R83
 !i113 1
 R12
 R13
