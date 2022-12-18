@@ -14,7 +14,7 @@ architecture beh of sad_tb is
     --constant outBits : positive := 36; --16;
     constant CLK_PERIOD : time := 100 ns;
     --constant FINISH  			: std_logic_vector(nPixel-1 downto 0) :=  (others => '1');
-    constant FINISH : positive := 2**(nPixel-1)+1;
+    constant FINISH : positive := 2**(nPixel-1)+2;
     
     component sad 
     generic (
@@ -76,6 +76,7 @@ architecture beh of sad_tb is
 		
         wait until rising_edge(clk);
         new_comp_ext <= '0';
+        rst <= '1';
 
         wait for FINISH*CLK_PERIOD;
         wait for 200 ns;
@@ -83,6 +84,7 @@ architecture beh of sad_tb is
         wait until rising_edge(clk);
         new_comp_ext <= '0';
         wait for FINISH*CLK_PERIOD;
+        wait for 200 ns;
         new_comp_ext <= '1';
         wait until rising_edge(clk);
         en<='0';
@@ -91,6 +93,7 @@ architecture beh of sad_tb is
         en<='1';
         
         wait for FINISH*CLK_PERIOD;
+        wait for 200 ns;
         testing <= false;
     
     end process;    

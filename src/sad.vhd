@@ -58,7 +58,7 @@ architecture rtl of sad is
     end component;
 
     --constants
-    constant FINISH  			: positive := 2**(nPixel-1);
+    constant FINISH  			: positive := 2**(nPixel-1)+1;
     
     -- signals
     signal PA_to_sub:   std_logic_vector(nBits-1 downto 0);     --connection from the registerister on pixel_A and subtractor
@@ -85,6 +85,8 @@ architecture rtl of sad is
             --If a new computation is started I reset valid and counter
             --old_valid <= '0' when (new_comp='1') else not '1';
             --valid <= old_valid;
+
+            new_comp_rst <= '0' when (new_comp='1') else rst;
                       
             -- Save pixel_A and pixel_B into registeristers
             PA_register: dff_n
@@ -118,7 +120,7 @@ architecture rtl of sad is
                 generic map (N => nBits)
                 port map (
                     clk => clk, 
-                    resetn => rst, 
+                    resetn => new_comp_rst, 
                     en => enable,
                     di=> out_sub,
                     do=> sub_reg_to_padd
@@ -131,7 +133,7 @@ architecture rtl of sad is
             padding <= (others => '0');
             in_phac <= padding & sub_reg_to_padd;
 
-            new_comp_rst <= '0' when (new_comp='1') else rst;
+            
             -- Perform the sum of absolute difference values
             add: counter
                 generic map(N=> outBits)
