@@ -123,3 +123,5 @@ run -all
 #    Time: 0 ps  Iteration: 0  Instance: /sad_tb_2/SAD1/sub
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /sad_tb_2/SAD1/sub
+# End time: 10:25:15 on Dec 19,2022, Elapsed time: 14:41:54
+# Errors: 0, Warnings: 6

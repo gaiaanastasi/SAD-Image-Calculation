@@ -1,3 +1,0 @@
-- Dimensionamento output -> per gestire overflow
-- new_comp signal
--Wrapper con i registri

@@ -10,6 +10,7 @@ outBits = 16
 fname = "sad_tb_2.vhd"
 finish = 2**(nPixel-1)+8
 stop = 2**(nBits) -1
+NUM_TEST = 2
 
 def pixel():
     # Variable to store the
@@ -102,7 +103,7 @@ out_file.write("    stimulus : process\n")
 out_file.write("begin\n")
 
 out_file.write("rst <= '1';\n")
-for a in range(finish*2):
+for a in range(finish*NUM_TEST):
     if a % finish == 0:
         out_file.write("    new_comp_ext <= '1';\n")
     else:
